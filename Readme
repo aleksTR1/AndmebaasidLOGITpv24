@@ -1,0 +1,19 @@
+## AndmebaasidLOGITpv24
+andmebaaside haldusega seotud sql kood ja konspektid
+
+## Põhimõisted
+    Andmebaasi haldussüsteemid - tarkvara, millega abil saab luua andmebaas (mariaDB - XAMPP, SQL Server - SQL Server Management Studio)
+    Andmebaas - struktureeritud andmete kogum
+    Tabel - olem - сущности
+    Veerg = väli - поле
+    Rida = kirje - запись
+    Primaarne võti - primary key -PK- veerg, unikaalse identifikatooriga (tavaliselt nimetakse id)
+    Välisvõti (võõrvõti) - foreign key - FK - veerg, mis loob seose teise tabeli primaarne võtmega
+
+##SQL - structured query language - struktureeritud päringu keel
+
+    päring - запрос
+
+
+    1. DDL - Data Definition Language
+    2. DML - Data Manipulation Language
