@@ -42,4 +42,14 @@ andmebaaside haldusega seotud sql kood ja konspektid
 
 - mitme-mitmele (õpilased-tunnid)
 
+## ALTER TABLE - tabeli struktuuri muutmine
+--1. uue veeru lisamine
+ALTER TABLE tootaja ADD testVeerg int;
+select * from tootaja
+--2. veeru kustutamine
+ALTER TABLE tootaja DROP COLUMN testVeerg;
+--3. andmetüübi muutmine veerus
+ALTER TABLE tootaja ALTER COLUMN testVeerg varchar(5);
+--struktuuri kontrollimiseks kasutame protseduur sp_help
+sp_help tootaja;
    
