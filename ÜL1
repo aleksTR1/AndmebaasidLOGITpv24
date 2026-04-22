@@ -1,0 +1,53 @@
+--Category (idCategory, Category_Name)
+CREATE TABLE Category(
+idCategory int PRIMARY KEY IDENTITY (1,1),
+Category_name varchar(10));
+insert into Category
+values('piima')
+SELECT * FROM Category
+ALTER TABLE Category ADD CONSTRAINT Category_Name UNIQUE (Category_Name)
+
+--Product (idProduct, Name, idCategory, price)
+CREATE TABLE Productt(
+idProduct int primary key IDENTITY (1,1),
+Name varchar(10),
+idCategory int, FOREIGN KEY (idCategory) REFERENCES Category(idCategory),
+Price money)
+SELECT * FROM Productt
+--täidame tabeli
+INSERT INTO Productt
+values('piim tere'), 1, 1.29)
+
+--Sale (idSale, idProduct, idCustomer, Count_pr, Date_of_sale)
+CREATE TABLE Sale(
+idSale int PRIMARY KEY identity(1,1),
+idproductt int,
+idCustomer int,
+FOREIGN KEY (idProductt) REFERENCES Productt(idProduct),
+Count int,
+date_of_sale date)
+--Tabel Customer(
+CREATE TABLE Customer(
+idCustomer int PRIMARY KEY identity(1,1),
+Name varchar(100) not null,
+Contact varchar(100))
+ALTER TABLE Sale ADD CONSTRAINT fk_sale
+FOREIGN KEY (idCustomer) REFERENCES Customer(idCustomer);
+
+INSERT INTO Category
+VALUES ('autot')
+
+INSERT INTO Productt
+VALUES ('mercedes')
+
+INSERT INTO Customer
+VALUES ('vadim', '6767 6767')
+
+INSERT INTO Sale
+VALUES (2, 1, 10,'2006-10-10')
+
+SELECT * FROM Sale;
+SELECT * FROM Productt;
+SELECT * FROM Customer;
+SELECT * FROM Category;
+
