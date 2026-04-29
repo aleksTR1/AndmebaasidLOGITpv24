@@ -1,8 +1,6 @@
 CREATE DATABASE LOGITpv24baas;
-GO
 
 USE LOGITpv24baas;
-GO
 
 -- 1. tootaja
 CREATE TABLE tootaja(
