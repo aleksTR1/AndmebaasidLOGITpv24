@@ -24,3 +24,32 @@ Valime Public:
 3. Pärast avame User Mapping:
 
 <img width="707" height="661" alt="{CA4FA8CE-928D-4CD3-8AE2-8A385A78788E}" src="https://github.com/user-attachments/assets/c68ea197-ed54-4fe8-8aa7-a5bd7b84233c" />
+
+  4. SQL commands
+     
+Grant <- õiguste määramine
+
+Deny <- õiguste keelamine
+
+anname kasutajale õigus vaadata tabelit (SELECT), lisada andmed (INSERT )ning uuendada need(UPDATE)
+
+  ```
+  grant select on opilane_table to DirectorTagirov
+  grant insert on opilane_table to DirectorTagirov
+  grant update on opilane_table to DirectorTagirov
+  ```
+
+5. kasutaja õiguste kontroll
+
+<img width="471" height="510" alt="{6439342E-BF35-491C-8FC2-8B58D6ABBC5A}" src="https://github.com/user-attachments/assets/e5088a19-4d42-41fe-b035-0b9894f1363d" />
+
+Kasutaja Director ei saa kasutada Delete:
+<img width="824" height="177" alt="{D9B857E1-1D67-4B9B-BEC1-A968007294ED}" src="https://github.com/user-attachments/assets/152267c6-658e-4319-92ab-55547f8ab48f" />
+
+
+
+
+
+
+
+
