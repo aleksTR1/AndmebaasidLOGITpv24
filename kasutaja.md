@@ -46,7 +46,40 @@ anname kasutajale õigus vaadata tabelit (SELECT), lisada andmed (INSERT )ning u
 Kasutaja Director ei saa kasutada Delete:
 <img width="824" height="177" alt="{D9B857E1-1D67-4B9B-BEC1-A968007294ED}" src="https://github.com/user-attachments/assets/152267c6-658e-4319-92ab-55547f8ab48f" />
 
+1. Luua tabliet, andmebaas:
+````
+Create database MovieBaseLogitpv24;
 
+Use MovieBaseLogitpv24;
+
+create table movies(
+id int primary key identity(1,1),
+moviesNimi varchar(50) not null,
+moviesYear int,
+movieDir varchar(50),
+movieCost decimal(10,2)
+)
+
+create table guest(
+id int primary key identity(1,1),
+name varchar(50)
+)
+
+insert into movies(moviesNimi, moviesYear, movieDir, movieCost)
+values ('Titanic',1997,'James Cameron',2000000),
+
+
+insert into guest (name)
+values ('Anna');
+
+select * from movies
+select * from guest
+````
+<img width="517" height="430" alt="{0098C5B8-A2B3-4C49-A871-3A8A4ABB8624}" src="https://github.com/user-attachments/assets/5247219e-2ed7-4390-b310-0dd284002bad" />
+
+2. Lisame uus kasutaja: nimetasin kasutaja - Produss
+   
+<img width="311" height="385" alt="{A1EA9026-47F4-4959-B04B-43A390ABC374}" src="https://github.com/user-attachments/assets/b53eafb6-1005-4547-80ed-0940c42e7159" />
 
 
 
