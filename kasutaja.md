@@ -82,7 +82,29 @@ select * from guest
 <img width="311" height="385" alt="{A1EA9026-47F4-4959-B04B-43A390ABC374}" src="https://github.com/user-attachments/assets/b53eafb6-1005-4547-80ed-0940c42e7159" />
 
 
+3. õigused
+   
+```sql
+GRANT SELECT, UPDATE (movieDir, movieCost)
+ON movies TO Produss;
 
+GRANT INSERT, SELECT
+ON guest TO Produss;
 
+DENY DELETE
+ON movies TO Produss;
+
+DENY DELETE
+ON guest TO Produss;
+```
+
+4. Logime sisse nagu Produss ja proovime näiteks kasutada delete:
+```
+USE MovieBaseLogitpv24;
+delete from movies
+```
+<img width="1130" height="646" alt="{4FD79335-E614-42ED-B8AE-E7A2E56F49EC}" src="https://github.com/user-attachments/assets/cda0a53f-5b12-4391-af9e-d08b0ecca6b2" />
+
+<img width="855" height="388" alt="{953720EC-BE66-4423-998C-FB09D1698390}" src="https://github.com/user-attachments/assets/5e7470c8-456f-4750-b845-71b74f560270" />
 
 
