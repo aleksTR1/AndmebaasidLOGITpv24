@@ -1,0 +1,97 @@
+create database TagirovÜL
+
+USE TAGIROVÜL
+
+--1.Kasutaja 
+CREATE TABLE kasutaja (
+    kasutaja_id INT PRIMARY KEY IDENTITY,
+    eesnimi VARCHAR(50),
+    perenimi VARCHAR(50),
+    email VARCHAR(100)
+)
+
+insert into kasutaja
+values('','sild','boss','silbos@gmail.com')
+
+Select * from kasutaja
+
+--2.Kategooria
+CREATE TABLE kategooria (
+    kategooria_id INT PRIMARY KEY IDENTITY,
+    kategooria_nimi VARCHAR(50)
+)
+insert into kategooria
+values('Joogid')
+
+Select * from kategooria
+
+--3.Toiduaine
+CREATE TABLE toiduaine (
+    toiduaine_id INT PRIMARY KEY IDENTITY,
+    toiduaine_nimi VARCHAR(100)
+)
+insert into toiduaine
+values('Suhkur')
+
+Select * from toiduaine
+
+--4.yhik
+CREATE TABLE yhik (
+    yhik_id INT PRIMARY KEY IDENTITY,
+    yhik_nimi VARCHAR(50)
+)
+INSERT INTO yhik
+VALUES ('tk')
+
+Select * from yhik
+
+--5. Retsept
+CREATE TABLE retsept (
+    retsept_id INT PRIMARY KEY IDENTITY,
+    retsepti_nimi VARCHAR(100),
+    kirjeldus VARCHAR(200),
+    juhend VARCHAR(300),
+    kasutaja_id INT,
+    kategooria_id INT,
+)
+
+INSERT INTO retsept
+VALUES ('Kakao', 'Soe jook', 'Sega kakao suhkru ja piimaga, kuumuta', 5, 5);
+
+Select * from retsept
+
+--6.Koostis
+CREATE TABLE koostis (
+    koostis_id INT PRIMARY KEY IDENTITY,
+    kogus INT,
+    retsept_id INT,
+    toiduaine_id INT,
+    yhik_id INT,
+)
+INSERT INTO koostis 
+VALUES ('100', '5', '5', '2'); 
+
+Select * from koostis
+
+--7.Tehtud
+CREATE TABLE tehtud (
+    tehtud_id INT PRIMARY KEY IDENTITY,
+    tehtud_kp DATE,
+    retsept_id INT,
+
+    FOREIGN KEY (retsept_id)
+    REFERENCES retsept(retsept_id)
+)
+INSERT INTO tehtud (tehtud_kp, retsept_id) 
+VALUES ('2025-02-14', 5);
+
+Select * from tehtud
+
+--kontroll
+Select * from kasutaja
+Select * from kategooria
+Select * from toiduaine
+Select * from yhik
+Select * from retsept
+Select * from koostis
+Select * from tehtud
