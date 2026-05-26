@@ -4,86 +4,97 @@ USE TAGIROVÜL
 
 --1.Kasutaja 
 CREATE TABLE kasutaja (
-    kasutaja_id INT PRIMARY KEY IDENTITY,
+    kasutaja_id INT PRIMARY KEY IDENTITY(1,1),
     eesnimi VARCHAR(50),
     perenimi VARCHAR(50),
     email VARCHAR(100)
 )
 
-insert into kasutaja
-values('','sild','boss','silbos@gmail.com')
+INSERT INTO kasutaja  
+VALUES('Mari', 'Maasikas', 'mari.maasikas@yahoo.com')
 
 Select * from kasutaja
 
 --2.Kategooria
 CREATE TABLE kategooria (
-    kategooria_id INT PRIMARY KEY IDENTITY,
+    kategooria_id INT PRIMARY KEY IDENTITY(1,1),
     kategooria_nimi VARCHAR(50)
 )
-insert into kategooria
-values('Joogid')
+INSERT INTO kategooria
+VALUES ('Salatid')
 
 Select * from kategooria
 
 --3.Toiduaine
 CREATE TABLE toiduaine (
-    toiduaine_id INT PRIMARY KEY IDENTITY,
+    toiduaine_id INT PRIMARY KEY IDENTITY(1,1),
     toiduaine_nimi VARCHAR(100)
 )
-insert into toiduaine
-values('Suhkur')
+INSERT INTO toiduaine (toiduaine_nimi) 
+VALUES('Kartul')
 
 Select * from toiduaine
 
 --4.yhik
 CREATE TABLE yhik (
-    yhik_id INT PRIMARY KEY IDENTITY,
+    yhik_id INT PRIMARY KEY IDENTITY(1,1),
     yhik_nimi VARCHAR(50)
 )
-INSERT INTO yhik
-VALUES ('tk')
+INSERT INTO yhik (yhik_nimi)
+VALUES('spl')
 
 Select * from yhik
 
 --5. Retsept
 CREATE TABLE retsept (
-    retsept_id INT PRIMARY KEY IDENTITY,
+    retsept_id INT PRIMARY KEY IDENTITY(1,1),
     retsepti_nimi VARCHAR(100),
     kirjeldus VARCHAR(200),
     juhend VARCHAR(300),
     kasutaja_id INT,
     kategooria_id INT,
+
+FOREIGN KEY (kasutaja_id) REFERENCES kasutaja(kasutaja_id),
+FOREIGN KEY (kategooria_id) REFERENCES kategooria(kategooria_id)
 )
 
-INSERT INTO retsept
-VALUES ('Kakao', 'Soe jook', 'Sega kakao suhkru ja piimaga, kuumuta', 5, 5);
+INSERT INTO retsept (retsepti_nimi, kirjeldus, juhend, kasutaja_id, kategooria_id) 
+VALUES ('Tomati-juustu pasta', 'Kiire õhtusöök', 'Keeda pasta, lisa tomatikaste ja juust', 5, 5);
+
+
 
 Select * from retsept
 
 --6.Koostis
 CREATE TABLE koostis (
-    koostis_id INT PRIMARY KEY IDENTITY,
+    koostis_id INT PRIMARY KEY IDENTITY(1,1),
     kogus INT,
     retsept_id INT,
     toiduaine_id INT,
     yhik_id INT,
+
+FOREIGN KEY (retsept_id) REFERENCES retsept(retsept_id),
+FOREIGN KEY (toiduaine_id) REFERENCES toiduaine(toiduaine_id),
+FOREIGN KEY (yhik_id) REFERENCES yhik(yhik_id)
 )
+
 INSERT INTO koostis 
-VALUES ('100', '5', '5', '2'); 
+VALUES('5', '5', '5', '5');   
 
 Select * from koostis
 
 --7.Tehtud
 CREATE TABLE tehtud (
-    tehtud_id INT PRIMARY KEY IDENTITY,
+    tehtud_id INT PRIMARY KEY IDENTITY(1,1),
     tehtud_kp DATE,
     retsept_id INT,
 
     FOREIGN KEY (retsept_id)
     REFERENCES retsept(retsept_id)
-)
-INSERT INTO tehtud (tehtud_kp, retsept_id) 
-VALUES ('2025-02-14', 5);
+	)
+
+INSERT INTO tehtud 
+VALUES('2026-05-24', 6)
 
 Select * from tehtud
 
@@ -95,3 +106,35 @@ Select * from yhik
 Select * from retsept
 Select * from koostis
 Select * from tehtud
+
+-- 1. PROTSEDUUR: Lisab kiiresti uue kategooria
+CREATE PROCEDURE LisaKategooria @nimi VARCHAR(50) AS 
+    INSERT INTO kategooria VALUES (@nimi);
+
+	-- 2. PROTSEDUUR: Kustutab kategooria ID alusel
+CREATE PROCEDURE KustutaKategooria @id INT AS 
+    DELETE FROM kategooria WHERE kategooria_id = @id;
+
+	-- Lisab uue kategooria nimega 'Supid'
+EXEC LisaKategooria 'Supid';
+
+-- Kustutab kategooria, mille ID on 1
+EXEC KustutaKategooria 6;
+
+--Staff õigused
+GRANT SELECT, INSERT ON toiduaine TO staff;
+GRANT SELECT, INSERT ON kategooria TO staff;
+GRANT SELECT ON kasutaja TO staff;
+
+DENY UPDATE, DELETE ON toiduaine TO staff;
+DENY UPDATE, DELETE ON kategooria TO staff;
+DENY INSERT, UPDATE, DELETE ON kasutaja TO staff;
+
+--Manager õigused
+GRANT SELECT ON SCHEMA::dbo TO manager;
+
+GRANT SELECT, INSERT, UPDATE, DELETE ON retsept TO manager;
+GRANT SELECT, INSERT, UPDATE, DELETE ON koostis TO manager;
+
+DENY INSERT ON toiduaine TO manager;
+DENY INSERT ON kasutaja TO manager;
