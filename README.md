@@ -1,6 +1,9 @@
 ## AndmebaasidLOGITpv24
 andmebaaside haldusega seotud sql kood ja konspektid
 
+## Andmebaaside konspektid
+[Create_insert](Create_insert.sql) | [Kasutaja](Kasutaja.md) | [triger](triger.md) | [trigeridXAMPP](trigeridXAMPP.md) | [Ülesanne_1](Ülesanne_1.sql)
+
 ## Sisukord
 - [Põhimõisted](#põhimõisted)
 - [Piirangud](#piirangud)
