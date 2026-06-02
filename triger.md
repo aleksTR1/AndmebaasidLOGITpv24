@@ -1,5 +1,5 @@
 ## Andmebaaside konspektid
-[sales](sales.md) | [Konspekt](kasutaja.md) | [triger](triger.md) | [trigeridXAMPP](trigeridXAMPP.md) | [Ülesanne_1](ÜL1.md)
+[Keys](keys.md) | [Konspekt](kasutaja.md) | [trigerMysql](triger.md) | [trigeridXAMPP](trigeridXAMPP.md) | [Ülesanne_1](ÜL1.md)
 
 
 ## Triger - trigger -päästik
