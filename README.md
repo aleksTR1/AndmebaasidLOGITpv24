@@ -1,6 +1,6 @@
 ## AndmebaasidLOGITpv24
 andmebaaside haldusega seotud sql kood ja konspektid
-
+ 
 ## Andmebaaside konspektid
 [sales](sales.md) | [Konspekt](kasutaja.md) | [triger](triger.md) | [trigeridXAMPP](trigeridXAMPP.md) | [Ülesanne_1](ÜL1)
 
