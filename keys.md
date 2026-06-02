@@ -26,6 +26,9 @@ CREATE TABLE Kliendid (
 ### Ekraanipilt:
 
 <img width="694" height="582" alt="{DCBA1B2E-C52C-453B-95FA-8B288B741785}" src="https://github.com/user-attachments/assets/da14981f-14ed-4e7d-8359-d7400d547aa1" />
+<img width="316" height="91" alt="{FDCE117B-33E2-47AA-8A93-4D5F1B9A915D}" src="https://github.com/user-attachments/assets/f9d0e1bc-8932-43b6-bfa2-5bbd66b43021" />
+
+
 
 
 ## 2. Foreign Key (Välisvõti)
@@ -49,6 +52,12 @@ CREATE TABLE Tellimused (
 ### Ekraanipilt:
 
 <img width="666" height="311" alt="{B66EFF6B-772D-42CB-AA8B-154A1360A395}" src="https://github.com/user-attachments/assets/5e3b2047-f4bd-4ae2-a773-c9a961cf9641" />
+<img width="289" height="110" alt="{7B6B28BA-4223-44A1-96ED-916E591D8334}" src="https://github.com/user-attachments/assets/283a11b2-341d-4938-8df0-1a01247cca8c" />
+
+
+
+
+
 
 ## 3. Unique Key (Unikaalne võti)
 
@@ -72,6 +81,10 @@ CREATE TABLE Kasutajakontod (
 ### Ekraanipilt:
 
 <img width="716" height="612" alt="{5415D058-956A-42B9-B72F-31EEAAC9C21A}" src="https://github.com/user-attachments/assets/e79090f3-29b7-4eb3-a1d3-7a02b57020fa" />
+<img width="278" height="109" alt="{E530615F-4AB7-48E1-A938-D4824E0EFF40}" src="https://github.com/user-attachments/assets/3f610515-ad66-4e06-b940-0d9cca2082b4" />
+
+
+
 
 
 ## 4. Simple Key (Lihtvõti)
@@ -94,6 +107,10 @@ CREATE TABLE Tooted (
 ### Ekraanipilt:
 
 <img width="618" height="620" alt="{B4142CB6-F761-4B70-AAD7-9CE1002C0D6C}" src="https://github.com/user-attachments/assets/5c84548e-d953-478b-91f5-074bb5738be5" />
+<img width="280" height="92" alt="{0466DBE6-1D7A-4614-B598-FE05C2E15288}" src="https://github.com/user-attachments/assets/304cc364-b2b2-4860-88c7-e0636b171c0c" />
+
+
+
 
 
 ## 5. Composite Key (Kombineeritud võti / Liitvõti)
@@ -117,6 +134,9 @@ CREATE TABLE Tootepartii (
 ### Ekraanipilt:
 
 <img width="735" height="589" alt="{A2BA73F4-5FD3-4401-A5ED-A0D7DDEFB971}" src="https://github.com/user-attachments/assets/05219355-0029-48f3-9d80-3bc1a5624d92" />
+<img width="318" height="95" alt="{51276082-2F45-4522-A9CE-5BDCB973AFA8}" src="https://github.com/user-attachments/assets/0d1771c9-1293-48b3-a974-76557c1e40ee" />
+
+
 
 
 ## 6. Compound Key (Liitvõti välisvõtmetest)
@@ -142,6 +162,8 @@ CREATE TABLE Tellimuse_Read (
 ### Ekraanipilt:
 
 <img width="657" height="612" alt="{AB1E5C07-B35E-4F87-9AFF-334F918BED76}" src="https://github.com/user-attachments/assets/8ff264b4-0ec7-41ba-9322-c8182ab365da" />
+<img width="301" height="92" alt="{355590A7-8F5E-41B5-89EA-B0B7AD2D1561}" src="https://github.com/user-attachments/assets/2675203e-2638-4264-9b6c-93e2eea58c2c" />
+
 
 
 ## 7. Superkey (Supervõti)
@@ -166,6 +188,8 @@ CREATE TABLE Kullerid (
 ### Ekraanipilt:
 
 <img width="576" height="598" alt="{8512646E-4A53-4A02-8C0E-83AEEC07332C}" src="https://github.com/user-attachments/assets/466fa3cf-c9db-4f43-adf7-212ab42c5df3" />
+<img width="297" height="94" alt="{6E25C343-C052-422F-9811-3F8D93E0C083}" src="https://github.com/user-attachments/assets/07f00ca2-ef6f-4763-be56-bed1477f9c50" />
+
 
 
 ## 8. Candidate Key (Kandidaatvõti)
@@ -188,6 +212,8 @@ CREATE TABLE Tootja_Tehased (
 ### Ekraanipilt:
 
 <img width="834" height="628" alt="{9C17E6B3-8EA7-48FB-A37C-4C89B66034DE}" src="https://github.com/user-attachments/assets/f8f49e68-8cc6-48f9-b5a5-f0b21db6b026" />
+<img width="339" height="89" alt="{D9876EF8-3E9B-4FEA-9C7B-26F22FE76628}" src="https://github.com/user-attachments/assets/98b6f747-f56f-40f4-9ed1-f1120ee5d221" />
+
 
 
 ## 9. Alternate Key (Alternatiivne võti)
@@ -208,6 +234,8 @@ SELECT registrikood FROM Tootja_Tehased WHERE registrikood = 'EE1234567';
 ### Ekraanipilt:
 
 <img width="903" height="753" alt="{F22F35CD-5557-4AF9-B73B-1C76CC25767A}" src="https://github.com/user-attachments/assets/1ef9d752-23de-46a5-8864-3ee7ebd7f8e0" />
+<img width="295" height="75" alt="{B404BD1C-B8FF-44FC-947A-B7D79001380E}" src="https://github.com/user-attachments/assets/b4d2f2e4-a22b-477a-8154-974ab31c751b" />
+
 
 ## Kasutatud allikad
 
