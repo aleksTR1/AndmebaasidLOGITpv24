@@ -50,7 +50,8 @@ Values('Pärnu',15633)
 SELECT * FROM linnad;
 SELECT * FROM logi;
 ```
-<img width="438" height="444" alt="{6929D138-D4FA-47F9-8316-EA82F5B63DC1}" src="https://github.com/user-attachments/assets/17cd416b-099f-439e-842c-c1992b6e9687" />
+<img width="770" height="384" alt="{DD486A37-E731-4021-9D0F-DF819AD9AAC7}" src="https://github.com/user-attachments/assets/42c00344-dfb0-427c-a536-62d453d0e773" />
+
 
 
 ```
@@ -86,7 +87,6 @@ FROM deleted
 INNER JOIN inserted
 ON deleted.linnID=inserted.linnID;
 ```
-<img width="964" height="547" alt="{20A9CDCC-F192-4413-B545-16CA9E5E578D}" src="https://github.com/user-attachments/assets/b4987faf-7c06-41ee-ae56-9640ae17b2c5" />
 
 GRANT SELECT, INSERT, DELETE ON linnad TO sekretaarTagirov;
 DENY select, Delete ON linnad TO sekretaarTagirov;
