@@ -1,3 +1,5 @@
+## Andmebaaside konspektid
+[Keys](keys.md) | [Konspekt](kasutaja.md) | [trigerMysql](triger.md) | [trigeridXAMPP](trigeridXAMPP.md) | [Ülesanne_1](ÜL1.md)
 
 # Andmebaasi võtmed (Keys)
 
