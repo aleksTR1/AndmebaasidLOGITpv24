@@ -86,9 +86,7 @@ CONCAT('vanad andmed -linn: ', deleted.linnanimi,', elanike arv: ', deleted.rahv
 FROM deleted
 INNER JOIN inserted
 ON deleted.linnID=inserted.linnID;
-```
-
 GRANT SELECT, INSERT, DELETE ON linnad TO sekretaarTagirov;
 DENY select, Delete ON linnad TO sekretaarTagirov;
-
+```
 
