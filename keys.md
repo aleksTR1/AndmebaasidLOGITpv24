@@ -207,7 +207,3 @@ SELECT registrikood FROM Tootja_Tehased WHERE registrikood = 'EE1234567';
 * W3Schools SQL Constraints & Keys: https://www.w3schools.com/sql/
 * GeeksforGeeks - Types of Keys in Relational Database Management System: https://www.geeksforgeeks.org/types-of-keys-in-dbms/
 * Database Star - Guide to Database Keys: https://www.databasestar.com/database-keys/
-
-```
-
-```
