@@ -25,7 +25,8 @@ CREATE TABLE Kliendid (
 
 ### Ekraanipilt:
 
----
+<img width="694" height="582" alt="{DCBA1B2E-C52C-453B-95FA-8B288B741785}" src="https://github.com/user-attachments/assets/da14981f-14ed-4e7d-8359-d7400d547aa1" />
+
 
 ## 2. Foreign Key (Välisvõti)
 
@@ -47,7 +48,7 @@ CREATE TABLE Tellimused (
 
 ### Ekraanipilt:
 
----
+<img width="666" height="311" alt="{B66EFF6B-772D-42CB-AA8B-154A1360A395}" src="https://github.com/user-attachments/assets/5e3b2047-f4bd-4ae2-a773-c9a961cf9641" />
 
 ## 3. Unique Key (Unikaalne võti)
 
@@ -70,7 +71,8 @@ CREATE TABLE Kasutajakontod (
 
 ### Ekraanipilt:
 
----
+<img width="716" height="612" alt="{5415D058-956A-42B9-B72F-31EEAAC9C21A}" src="https://github.com/user-attachments/assets/e79090f3-29b7-4eb3-a1d3-7a02b57020fa" />
+
 
 ## 4. Simple Key (Lihtvõti)
 
@@ -91,7 +93,8 @@ CREATE TABLE Tooted (
 
 ### Ekraanipilt:
 
----
+<img width="618" height="620" alt="{B4142CB6-F761-4B70-AAD7-9CE1002C0D6C}" src="https://github.com/user-attachments/assets/5c84548e-d953-478b-91f5-074bb5738be5" />
+
 
 ## 5. Composite Key (Kombineeritud võti / Liitvõti)
 
@@ -113,7 +116,8 @@ CREATE TABLE Tootepartii (
 
 ### Ekraanipilt:
 
----
+<img width="735" height="589" alt="{A2BA73F4-5FD3-4401-A5ED-A0D7DDEFB971}" src="https://github.com/user-attachments/assets/05219355-0029-48f3-9d80-3bc1a5624d92" />
+
 
 ## 6. Compound Key (Liitvõti välisvõtmetest)
 
@@ -137,7 +141,8 @@ CREATE TABLE Tellimuse_Read (
 
 ### Ekraanipilt:
 
----
+<img width="657" height="612" alt="{AB1E5C07-B35E-4F87-9AFF-334F918BED76}" src="https://github.com/user-attachments/assets/8ff264b4-0ec7-41ba-9322-c8182ab365da" />
+
 
 ## 7. Superkey (Supervõti)
 
@@ -160,7 +165,8 @@ CREATE TABLE Kullerid (
 
 ### Ekraanipilt:
 
----
+<img width="576" height="598" alt="{8512646E-4A53-4A02-8C0E-83AEEC07332C}" src="https://github.com/user-attachments/assets/466fa3cf-c9db-4f43-adf7-212ab42c5df3" />
+
 
 ## 8. Candidate Key (Kandidaatvõti)
 
@@ -181,7 +187,8 @@ CREATE TABLE Tootja_Tehased (
 
 ### Ekraanipilt:
 
----
+<img width="834" height="628" alt="{9C17E6B3-8EA7-48FB-A37C-4C89B66034DE}" src="https://github.com/user-attachments/assets/f8f49e68-8cc6-48f9-b5a5-f0b21db6b026" />
+
 
 ## 9. Alternate Key (Alternatiivne võti)
 
@@ -200,7 +207,7 @@ SELECT registrikood FROM Tootja_Tehased WHERE registrikood = 'EE1234567';
 
 ### Ekraanipilt:
 
----
+<img width="903" height="753" alt="{F22F35CD-5557-4AF9-B73B-1C76CC25767A}" src="https://github.com/user-attachments/assets/1ef9d752-23de-46a5-8864-3ee7ebd7f8e0" />
 
 ## Kasutatud allikad
 
