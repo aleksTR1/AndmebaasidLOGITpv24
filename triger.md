@@ -1,3 +1,6 @@
+## Andmebaaside konspektid
+[Create_insert](Create_insert.sql) | [Kasutaja](kasutaja.md) | [triger](triger.md) | [trigeridXAMPP](trigeridXAMPP.md) | [Ülesanne_1](ÜL1)
+
 ## Triger - trigger -päästik
 
 ### Triger - andmebaasi objekt, mis käivitub automaatselt, kui toimub teatud sündmus (nt INSERT, UPDATE, DELETE).
