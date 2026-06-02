@@ -1,5 +1,6 @@
 ## Andmebaaside konspektid
-[Create_insert](Create_insert.sql) | [Kasutaja](kasutaja.md) | [triger](triger.md) | [trigeridXAMPP](trigeridXAMPP.md) | [Ülesanne_1](ÜL1)
+[sales](sales.md) | [Konspekt](kasutaja.md) | [triger](triger.md) | [trigeridXAMPP](trigeridXAMPP.md) | [Ülesanne_1](ÜL1)
+
 
 ## Andmebaas
 
