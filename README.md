@@ -2,7 +2,7 @@
 andmebaaside haldusega seotud sql kood ja konspektid
  
 ## Andmebaaside konspektid
-[Keys](keys.md) | [Konspekt](kasutaja.md) | [TrigerMysql](triger.md) | [trigeridXAMPP](trigeridXAMPP.md) | [Andmebaasi loomine](ÜL1.md)
+[Keys](keys.md) | [Kasutaja ja õigus loomine SQL serveris](konspekt.md) | [TrigerMysql](triger.md) | [trigeridXAMPP](trigeridXAMPP.md) | [Andmebaasi loomine](ÜL1.md)
 
 ## Sisukord
 - [Põhimõisted](#põhimõisted)
