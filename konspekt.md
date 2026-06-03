@@ -1,5 +1,5 @@
 ## Andmebaaside konspektid
-[Keys](keys.md) | [Kasutaja ja õigus loomine SQL serveris](konspekt.md) | [TrigerMysql](triger.md) | [TrigeridXAMPP](trigeridXAMPP.md) | [Ülesanne_1](ÜL1.md)
+[Keys](keys.md) | [Kasutaja ja õigus loomine SQL serveris](konspekt.md) | [TrigerMysql](triger.md) | [trigeridXAMPP](trigeridXAMPP.md) | [Andmebaasi loomine](ÜL1.md)
 
 ## SQL server - Kasutajate autemine ja õiguste haldamine
 1. Windows Authentication
